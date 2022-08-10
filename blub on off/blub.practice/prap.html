@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1 id="blubdata">Lights OFF </h1>
+    <main id="lightapp">
+        <figure class="lightStyle">
+            <img src="bluboff.jpg" alt="bluboff photo" id="lightid5">
+            <figcaption>
+                <p class="prag">Light On Off</p>
+            </figcaption>
+        </figure>
+        <figure class="lightStyle">
+            <img src="bluboff.jpg" alt="bluboff photo" id="lightid1">
+            <figcaption>
+                <p class="prag">Light On Off</p>
+            </figcaption>
+        </figure>
+        <figure class="lightStyle">
+            <img src="bluboff.jpg" alt="bluboff photo" id="lightid2">
+            <figcaption>
+                <p class="prag">Light On Off</p>
+            </figcaption>
+        </figure>
+        <figure class="lightStyle">
+            <img src="bluboff.jpg" alt="bluboff photo" id="lightid3">
+            <figcaption>
+                <p class="prag">Light On Off</p>
+            </figcaption>
+        </figure>
+        <figure class="lightStyle">
+            <img src="bluboff.jpg" alt="bluboff photo" id="lightid4">
+            <figcaption>
+                <p class="prag">Light On Off</p>
+            </figcaption>
+        </figure>
+    </main>
+
+    <div class="onoff-btn">
+       <button onclick="tublelight()">click here for burn to blub</button>
+    </div>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            display: flex;
+            width: 100%;
+            /* height: 80%; */
+
+        }
+
+        .lightStyle {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        .lightStyle img {
+            width: 80%;
+        }
+
+        .onoff-btn {
+            width: 100%;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .switch {
+            position: absolute;
+            display: inline-block;
+            width: 60px;
+            height: 35px;
+        }
+
+        /* .switch input{
+       opacity: 0;
+       height: 0;
+       width: 0;
+
+    }
+    .slider {
+            position: absolute;
+            cursor: pointer;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background-color: brown;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+    .slider::before{
+            position: absolute;
+            content: "";
+            left: 4px;
+            bottom: 3px;
+            width: 26px;
+            height: 26px;
+            color:aliceblue
+    } */
+    </style>
+    </style>
+    <script>
+        
+
+         function tublelight() {
+             for(x=1; x<6; x++){
+                const blub = document.getElementById('lightid'.concat(x));
+                if (blub.src.match('bluboff.jpg')){
+                    blub.src = 'blubon.jpg'
+                }else{
+                    blub.src = 'bluboff.jpg';
+                }
+            }
+        }
+
+
+ 
+</script>
+
+</html>
+    </script>
+
+</body>
+
+</html>
